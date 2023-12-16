@@ -10,35 +10,55 @@ jobs:
 
     runs-on: ubuntu-20.04
 
-    env:
-      workdir: ./grpcwebproxy-source
-
     steps:
-      - name: Checkout code
+      - name: Git clone grpcwebproxy
         uses: actions/checkout@v4.1.1
         with:
+          repository: improbable-eng/grpc-web
           fetch-depth: 1
 
-      - name: Git clone grpcwebproxy
+      - name: xgo build
+        uses: crazy-max/ghaction-xgo@v3.0.0
+        with:
+          xgo_version: latest
+          go_version: 1.21
+          dest: dist
+          pkg: go/grpcwebproxy
+          prefix: grpcwebproxy
+          targets: linux/amd64,linux/arm64,linux/arm-7,linux/s390x,linux/riscv64,linux/386
+          v: true
+          x: false
+          race: false
+          ldflags: -s -w
+          buildmode: default
+
+      - name: Generate release tag
+        id: tag
+        run: echo "release_tag=v$(awk -F '"' '/version/{print $4}' client/grpc-web/package.json)" >> $GITHUB_OUTPUT
+
+      - name: Compress dist files
         run: |
-          git clone https://github.com/improbable-eng/grpc-web.git ${{ env.workdir }}
-          cp ./.github/grpcwebproxy-releaser.yml ${{ env.workdir }}/.goreleaser.yml
+          cd dist
+          for file in *; do
+            echo "Compressing $file"
+            mv $file grpcwebproxy
+            tar czf grpcwebproxy_$(sed 's/arm-7/arm/; s/-/_/g' <<< ${file#*-}).tar.gz grpcwebproxy
+            rm grpcwebproxy
+          done
 
-      - name: Set up GoReleaser
-        uses: actions/setup-go@v4.1.0
-        with:
-          go-version: "1.21"
-
-      - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v5.0.0
-        with:
-          distribution: goreleaser
-          workdir: ${{ env.workdir }}
-          version: latest
-          args: release --rm-dist --snapshot
-            
-      - name: Release binaries 
+      - name: Release binary files
         uses: softprops/action-gh-release@v0.1.15
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+#          tag_name: ${{ steps.tag.outputs.release_tag }}
           tag_name: grpcwebproxy
-          files: ${{ env.workdir }}/dist/*.tar.gz
+          files: dist/*.tar.gz
+
+      - name: Delete old workflow runs
+        uses: MajorScruffy/delete-old-workflow-runs@v0.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          repository: ${{ github.repository }}
+          older-than-seconds: 3600

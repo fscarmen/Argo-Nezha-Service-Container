@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BINARY: grpcwebproxy
+
     strategy:
       matrix:
         goos: [linux]
@@ -39,6 +40,7 @@ jobs:
           goarch: ${{ matrix.goarch }}
           goversion: "1.21.5"
           project_path: "go/${{ env.BINARY }}"
+          ldflags: -s -w --extldflags '-static -fpic'
           md5sum: "FALSE"
           release_tag: "${{ env.BINARY }}"
           release_name: "${{ env.BINARY }}"

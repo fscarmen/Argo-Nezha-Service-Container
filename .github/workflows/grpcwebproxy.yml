@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BINARY: grpcwebproxy
+      CGO_ENABLED: 0
 
     strategy:
       matrix:

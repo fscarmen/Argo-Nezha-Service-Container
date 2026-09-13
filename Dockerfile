@@ -12,7 +12,7 @@ RUN apt-get update &&\
     apt-get clean &&\
     rm -rf /var/lib/apt/lists/* &&\
     echo "#!/usr/bin/env bash\n\n\
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen2/Argo-Nezha-Service-Container/main/init.sh)" > entrypoint.sh &&\
+bash <(wget -qO- https://raw.githubusercontent.com/fscarmen5/Argo-Nezha-Service-Container/main/init.sh)" > entrypoint.sh &&\
     chmod +x entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]

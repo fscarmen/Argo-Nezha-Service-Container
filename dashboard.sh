@@ -15,18 +15,18 @@ mkdir -p $TEMP_DIR
 
 E[0]="Language:\n 1. English (default) \n 2. 简体中文"
 C[0]="${E[0]}"
-E[1]="Nezha Dashboard for VPS (https://github.com/fscarmen2/Argo-Nezha-Service-Containe).\n  - Goodbye docker!\n  - Goodbye port mapping!\n  - Goodbye IPv4/IPv6 Compatibility!"
-C[1]="哪吒面板 VPS 特供版 (https://github.com/fscarmen2/Argo-Nezha-Service-Container)\n  - 告别 Docker！\n  - 告别端口映射！\n  - 告别 IPv4/IPv6 兼容性！"
-E[2]="Curren architecture \$(uname -m) is not supported. Feedback: [https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-C[2]="当前架构 \$(uname -m) 暂不支持,问题反馈:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
+E[1]="Nezha Dashboard for VPS (https://github.com/fscarmen5/Argo-Nezha-Service-Container).\n  - Goodbye docker!\n  - Goodbye port mapping!\n  - Goodbye IPv4/IPv6 Compatibility!"
+C[1]="哪吒面板 VPS 特供版 (https://github.com/fscarmen5/Argo-Nezha-Service-Container)\n  - 告别 Docker！\n  - 告别端口映射！\n  - 告别 IPv4/IPv6 兼容性！"
+E[2]="Curren architecture \$(uname -m) is not supported. Feedback: [https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+C[2]="当前架构 \$(uname -m) 暂不支持,问题反馈:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
 E[3]="Input errors up to 5 times.The script is aborted."
 C[3]="输入错误达5次,脚本退出"
-E[4]="The script must be run as root, you can enter sudo -i and then download and run again. Feedback:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-C[4]="必须以root方式运行脚本，可以输入 sudo -i 后重新下载运行，问题反馈:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-E[5]="The script supports Debian, Ubuntu, CentOS, Alpine or Arch systems only. Feedback: [https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-C[5]="本脚本只支持 Debian、Ubuntu、CentOS、Alpine 或 Arch 系统,问题反馈:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-E[6]="Curren operating system is \$SYS.\\\n The system lower than \$SYSTEM \${MAJOR[int]} is not supported. Feedback: [https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-C[6]="当前操作是 \$SYS\\\n 不支持 \$SYSTEM \${MAJOR[int]} 以下系统,问题反馈:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
+E[4]="The script must be run as root, you can enter sudo -i and then download and run again. Feedback:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+C[4]="必须以root方式运行脚本，可以输入 sudo -i 后重新下载运行，问题反馈:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+E[5]="The script supports Debian, Ubuntu, CentOS, Alpine or Arch systems only. Feedback: [https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+C[5]="本脚本只支持 Debian、Ubuntu、CentOS、Alpine 或 Arch 系统,问题反馈:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+E[6]="Curren operating system is \$SYS.\\\n The system lower than \$SYSTEM \${MAJOR[int]} is not supported. Feedback: [https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+C[6]="当前操作是 \$SYS\\\n 不支持 \$SYSTEM \${MAJOR[int]} 以下系统,问题反馈:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
 E[7]="Install dependence-list:"
 C[7]="安装依赖列表:"
 E[8]="All dependencies already exist and do not need to be installed additionally."
@@ -49,16 +49,16 @@ E[16]="Please enter the Github Email for the database:"
 C[16]="请输入数据库的 Github Email:"
 E[17]="Please enter a Github PAT:"
 C[17]="请输入 Github PAT:"
-E[18]="There are variables that are not set. Installation aborted. Feedback: [https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-C[18]="参数不齐，安装中止，问题反馈:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
+E[18]="There are variables that are not set. Installation aborted. Feedback: [https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+C[18]="参数不齐，安装中止，问题反馈:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
 E[19]="Exit"
 C[19]="退出"
 E[20]="Close Nezha dashboard"
 C[20]="关闭哪吒面板"
 E[21]="Open Nezha dashboard"
 C[21]="开启哪吒面板"
-E[22]="Argo authentication message does not match the rules, neither Token nor Json, script exits. Feedback:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-C[22]="Argo 认证信息不符合规则，既不是 Token，也是不是 Json，脚本退出，问题反馈:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
+E[22]="Argo authentication message does not match the rules, neither Token nor Json, script exits. Feedback:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+C[22]="Argo 认证信息不符合规则，既不是 Token，也是不是 Json，脚本退出，问题反馈:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
 E[23]="Please enter the correct number"
 C[23]="请输入正确数字"
 E[24]="Choose:"
@@ -73,20 +73,20 @@ E[28]="open"
 C[28]="开启"
 E[29]="Uninstall Nezha dashboard"
 C[29]="卸载哪吒面板"
-E[30]="Install fscarmen's VPS with Argo version (https://github.com/fscarmen2/Argo-Nezha-Service-Container)"
-C[30]="安装 fscarmen 的 VPS argo 带远程备份版 (https://github.com/fscarmen2/Argo-Nezha-Service-Container)"
+E[30]="Install fscarmen's VPS with Argo version (https://github.com/fscarmen5/Argo-Nezha-Service-Container)"
+C[30]="安装 fscarmen 的 VPS argo 带远程备份版 (https://github.com/fscarmen5/Argo-Nezha-Service-Container)"
 E[31]="successful"
 C[31]="成功"
 E[32]="failed"
 C[32]="失败"
-E[33]="Could not find \$NEED_PORTS free ports, script exits. Feedback:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-C[33]="找不到 \$NEED_PORTS 个可用端口，脚本退出，问题反馈:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-E[34]="Important!!! Please turn on gRPC at the Network of the relevant Cloudflare domain, otherwise the client data will not work! See the tutorial for details: [https://github.com/fscarmen2/Argo-Nezha-Service-Container]"
-C[34]="重要!!! 请到 Cloudflare 相关域名的 Network 处打开 gRPC 功能，否则客户端数据不通!具体可参照教程: [https://github.com/fscarmen2/Argo-Nezha-Service-Container]"
+E[33]="Could not find \$NEED_PORTS free ports, script exits. Feedback:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+C[33]="找不到 \$NEED_PORTS 个可用端口，脚本退出，问题反馈:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+E[34]="Important!!! Please turn on gRPC at the Network of the relevant Cloudflare domain, otherwise the client data will not work! See the tutorial for details: [https://github.com/fscarmen5/Argo-Nezha-Service-Container]"
+C[34]="重要!!! 请到 Cloudflare 相关域名的 Network 处打开 gRPC 功能，否则客户端数据不通!具体可参照教程: [https://github.com/fscarmen5/Argo-Nezha-Service-Container]"
 E[35]="Please add two Public hostnames to Cloudnflare Tunnel: \\\n 1. ------------------------ \\\n Public hostname: \$ARGO_DOMAIN \\\n Path: proto.NezhaService \\\n Type: HTTPS \\\n URL: localhost:\$GRPC_PROXY_PORT \\\n Additional application settings ---\> TLS: Enable [No TLS Verify] and [HTTP2 connection] \\\n\\\n 2. ------------------------ \\\n Public hostname: \$ARGO_DOMAIN \\\n Type: HTTP \\\n URL: localhost:\$WEB_PORT"
 C[35]="请在 Cloudnflare Tunnel 里增加两个 Public hostnames: \\\n 1. ------------------------ \\\n Public hostname: \$ARGO_DOMAIN \\\n Path: proto.NezhaService \\\n Type: HTTPS \\\n URL: localhost:\$GRPC_PROXY_PORT \\\n Additional application settings ---\> TLS: 开启 [No TLS Verify] 和 [HTTP2 connection] 这两处功能 \\\n\\\n 2. ------------------------ \\\n Public hostname: \$ARGO_DOMAIN \\\n Type: HTTP \\\n URL: localhost:\$WEB_PORT"
-E[36]="Downloading the \${FAILED[*]} failed. Installation aborted. Feedback: [https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
-C[36]="下载 \${FAILED[*]} 失败，安装中止，问题反馈:[https://github.com/fscarmen2/Argo-Nezha-Service-Container/issues]"
+E[36]="Downloading the \${FAILED[*]} failed. Installation aborted. Feedback: [https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
+C[36]="下载 \${FAILED[*]} 失败，安装中止，问题反馈:[https://github.com/fscarmen5/Argo-Nezha-Service-Container/issues]"
 E[37]="Install Nezha's official VPS or docker version (https://github.com/naiba/nezha)"
 C[37]="安装哪吒官方 VPS 或 Docker 版本 (https://github.com/naiba/nezha)"
 E[38]="Please choose gRPC proxy mode:\n 1. Caddy (default)\n 2. Nginx\n 3. gRPCwebProxy"
@@ -232,7 +232,7 @@ check_system_info() {
 check_cdn() {
   # GITHUB_PROXY 数组第一个元素为空，相当于直连
   for PROXY_URL in "${GITHUB_PROXY[@]}"; do
-    local PROXY_STATUS_CODE=$(wget --server-response --spider --quiet --timeout=3 --tries=1 ${PROXY_URL}https://github.com/fscarmen2/Argo-Nezha-Service-Container/raw/main/README.md 2>&1 | awk '/HTTP\//{last_field = $2} END {print last_field}')
+    local PROXY_STATUS_CODE=$(wget --server-response --spider --quiet --timeout=3 --tries=1 ${PROXY_URL}https://github.com/fscarmen5/Argo-Nezha-Service-Container/raw/main/README.md 2>&1 | awk '/HTTP\//{last_field = $2} END {print last_field}')
     [ "$PROXY_STATUS_CODE" = "200" ] && GH_PROXY="$PROXY_URL" && break
   done
 }
@@ -451,7 +451,7 @@ http {
 }
 EOF
   elif [ "$REVERSE_PROXY_MODE" = 'grpcwebproxy' ]; then
-    wget -c ${GH_PROXY}https://github.com/fscarmen2/Argo-Nezha-Service-Container/releases/download/grpcwebproxy/grpcwebproxy-linux-$ARCH.tar.gz -qO- | tar xz -C $TEMP_DIR >/dev/null 2>&1
+    wget -c ${GH_PROXY}https://github.com/fscarmen5/Argo-Nezha-Service-Container/releases/download/grpcwebproxy/grpcwebproxy-linux-$ARCH.tar.gz -qO- | tar xz -C $TEMP_DIR >/dev/null 2>&1
     chmod +x $TEMP_DIR/grpcwebproxy
     GRPC_PROXY_RUN="nohup ${WORK_DIR}/grpcwebproxy --run_http_server=false --server_tls_cert_file=${WORK_DIR}/nezha.pem --server_tls_key_file=${WORK_DIR}/nezha.key --server_http_tls_port=$GRPC_PROXY_PORT --backend_addr=localhost:${GRPC_PORT} --backend_tls_noverify --server_http_max_read_timeout=300s --server_http_max_write_timeout=300s >/dev/null 2>&1 &"
   fi
@@ -596,7 +596,7 @@ EOF
 [Unit]
 Description=Nezha Argo for VPS
 After=network.target
-Documentation=https://github.com/fscarmen2/Argo-Nezha-Service-Container
+Documentation=https://github.com/fscarmen5/Argo-Nezha-Service-Container
 
 [Service]
 Type=simple
@@ -634,7 +634,7 @@ DASHBOARD_VERSION=$DASHBOARD_VERSION
 EOF
 
   # 生成 backup.sh 文件的步骤2 - 在线获取 template/bakcup.sh 模板生成完整 backup.sh 文件
-  wget -qO- ${GH_PROXY}https://raw.githubusercontent.com/fscarmen2/Argo-Nezha-Service-Container/main/template/backup.sh | sed '1,/^########/d' >> ${WORK_DIR}/backup.sh
+  wget -qO- ${GH_PROXY}https://raw.githubusercontent.com/fscarmen5/Argo-Nezha-Service-Container/main/template/backup.sh | sed '1,/^########/d' >> ${WORK_DIR}/backup.sh
 
   if [[ -n "$GH_BACKUP_USER" && -n "$GH_REPO" && -n "$GH_PAT" ]]; then
     # 生成还原数据脚本
@@ -658,7 +658,7 @@ IS_DOCKER=0
 ########
 EOF
     # 生成 restore.sh 文件的步骤2 - 在线获取 template/restore.sh 模板生成完整 restore.sh 文件
-    wget -qO- ${GH_PROXY}https://raw.githubusercontent.com/fscarmen2/Argo-Nezha-Service-Container/main/template/restore.sh | sed '1,/^########/d' >> ${WORK_DIR}/restore.sh
+    wget -qO- ${GH_PROXY}https://raw.githubusercontent.com/fscarmen5/Argo-Nezha-Service-Container/main/template/restore.sh | sed '1,/^########/d' >> ${WORK_DIR}/restore.sh
   fi
 
   # 生成 renew.sh 文件的步骤1 - 设置环境变量
@@ -673,7 +673,7 @@ TEMP_DIR=/tmp/renew
 EOF
 
   # 生成 renew.sh 文件的步骤2 - 在线获取 template/renew.sh 模板生成完整 renew.sh 文件
-  wget -qO- ${GH_PROXY}https://raw.githubusercontent.com/fscarmen2/Argo-Nezha-Service-Container/main/template/renew.sh | sed '1,/^########/d' >> ${WORK_DIR}/renew.sh
+  wget -qO- ${GH_PROXY}https://raw.githubusercontent.com/fscarmen5/Argo-Nezha-Service-Container/main/template/renew.sh | sed '1,/^########/d' >> ${WORK_DIR}/renew.sh
 
   # 生成定时任务: 1.每天北京时间 3:30:00 更新备份和还原文件，2.每天北京时间 4:00:00 备份一次，并重启 cron 服务； 3.每分钟自动检测在线备份文件里的内容
   if [ "$SYSTEM" = 'Alpine' ]; then

@@ -2,7 +2,7 @@
 
 Nezha server over Argo tunnel
 
-Documentation: English version | [中文版](https://github.com/fscarmen2/Argo-Nezha-Service-Container/blob/main/README.md)
+Documentation: English version | [中文版](https://github.com/fscarmen5/Argo-Nezha-Service-Container/blob/main/README.md)
 
 * * * *
 
@@ -202,7 +202,7 @@ services.
 
 ## VPS Deployment Method 2 --- hosts
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen2/Argo-Nezha-Service-Container/main/dashboard.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/fscarmen5/Argo-Nezha-Service-Container/main/dashboard.sh)
 ```
 
 

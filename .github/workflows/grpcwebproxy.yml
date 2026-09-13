@@ -1,5 +1,8 @@
 name: Cross compile grpcwebproxy
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
@@ -29,12 +32,12 @@ jobs:
 
     steps:
       - name: Git clone repository
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v7.0.1
         with:
           repository: improbable-eng/grpc-web
           fetch-depth: 1
 
-      - uses: wangyoucao577/go-release-action@v1.41
+      - uses: wangyoucao577/go-release-action@v1.55
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           goos: ${{ matrix.goos }}

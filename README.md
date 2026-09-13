@@ -2,7 +2,7 @@
 
 使用 Argo 隧道的哪吒服务端
 
-Documentation: [English version](https://github.com/fscarmen2/Argo-Nezha-Service-Container/blob/main/README_EN.md) | 中文版
+Documentation: [English version](https://github.com/fscarmen5/Argo-Nezha-Service-Container/blob/main/README_EN.md) | 中文版
 
 * * *
 
@@ -200,7 +200,7 @@ services:
 
 ## VPS 部署方式 2 --- 宿主机
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen2/Argo-Nezha-Service-Container/main/dashboard.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/fscarmen5/Argo-Nezha-Service-Container/main/dashboard.sh)
 ```
 
 
